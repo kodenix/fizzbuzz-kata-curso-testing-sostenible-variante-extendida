@@ -9,9 +9,13 @@ export class FizzBuzz {
     }
     
     private processDivisibleByThree(value): string {
-        if (this.totalOfCharacterInValue(value, "3")===2) return "FizzFizzFizz";
-        if (this.totalOfCharacterInValue(value, "3")===1) return "FizzFizz";
-        return "Fizz";
+        const totalCharacters = this.totalOfCharacterInValue(value, "3");
+        let outText = "Fizz";
+        for (let i=0; i < totalCharacters; i++) {
+            outText+= "Fizz";
+        }
+
+        return outText;
     }
 
     private totalOfCharacterInValue(value: number, character: string): number {
