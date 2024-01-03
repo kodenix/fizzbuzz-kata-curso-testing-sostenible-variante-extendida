@@ -9,4 +9,9 @@ describe('FizzBuzz', ()=> {
 	test('convert_3_to_Fizz', () => {
 		expect(new FizzBuzz().convert(3)).toBe("Fizz");
 	});
+
+
+	test('convert_6_to_Fizz', () => {
+		expect(new FizzBuzz().convert(6)).toBe("Fizz");
+	});
 })
