@@ -6,7 +6,7 @@ describe('FizzBuzz', ()=> {
 		expect(new FizzBuzz().convert(value)).toBe(expected);
 	})
 
-	test.each([[3, "Fizz"], [6, "Fizz"], [9, "Fizz"]])('convert %i to %s', (value: number, expected: string)=>{
+	test.each([[6, "Fizz"], [9, "Fizz"]])('convert %i to %s', (value: number, expected: string)=>{
 		expect(new FizzBuzz().convert(value)).toBe(expected);
 	})
 
@@ -16,6 +16,10 @@ describe('FizzBuzz', ()=> {
 
 	test.each([[15, "FizzBuzz"], [30, "FizzBuzz"], [60, "FizzBuzz"]])('convert %i to %s', (value: number, expected: string)=>{
 		expect(new FizzBuzz().convert(value)).toBe(expected);
+	})
+
+	test('3 convert to FizzFizz', ()=> {
+		expect(new FizzBuzz().convert(3)).toBe("FizzFizz");
 	})
 
 
