@@ -22,7 +22,8 @@ describe('FizzBuzz', ()=> {
 		[3, "FizzFizz"], 
 		[33, "FizzFizzFizz"], 
 		[63, "FizzFizz"], 
-		[93, "FizzFizz"]
+		[93, "FizzFizz"],
+		[333, "FizzFizzFizzFizz"],
 	])('convert %i to %s', (value: number, expected: string)=>{
 		expect(new FizzBuzz().convert(value)).toBe(expected);
 	})
