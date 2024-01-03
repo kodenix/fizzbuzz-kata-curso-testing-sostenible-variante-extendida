@@ -1,7 +1,7 @@
 import { FizzBuzz } from '../core/fizzBuzz';
 
 describe('FizzBuzz', ()=> {
-	test('default', ()=>{
-		expect(true).toBe(true);
+	test('convert_1_to_1', ()=>{
+		expect(new FizzBuzz().convert(1)).toBe('1');
 	})
 })
