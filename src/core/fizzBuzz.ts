@@ -1,11 +1,25 @@
 export class FizzBuzz {
     convert(value: number): string {
-        if (value % 15 === 0) return "FizzBuzz";
-        if (value % 5 === 0) return "Buzz";
+        if (value % 15 === 0) {
+            return "FizzBuzz";
+        }
+        if (value % 5 === 0) {
+            return this.processDivisibleByFive(value);
+        }
         if (value % 3 === 0) {
             return this.processDivisibleByThree(value);
         }
         return value.toString();
+    }
+    
+    private processDivisibleByFive(value: number): string {
+        const totalCharacters = this.totalOfCharacterInValue(value, "5");
+        let outText = "Buzz";
+        for (let i=0; i < totalCharacters; i++) {
+            outText+= "Buzz";
+        }
+
+        return outText;
     }
     
     private processDivisibleByThree(value): string {

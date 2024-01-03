@@ -11,7 +11,7 @@ describe('FizzBuzz', ()=> {
 	})
 
 	test.each([
-		[5, "Buzz"], 
+		[5, "BuzzBuzz"], 
 		[10, "Buzz"], 
 		[20, "Buzz"]
 	])('convert %i to %s', (value: number, expected: string)=>{
