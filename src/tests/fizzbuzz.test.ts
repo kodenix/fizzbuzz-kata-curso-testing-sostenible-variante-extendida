@@ -15,4 +15,9 @@ describe('FizzBuzz', ()=> {
 	})
 
 
+	test('convert 15 to FizzBuzz', () => {
+		expect(new FizzBuzz().convert(15)).toBe("FizzBuzz");
+	})
+
+
 })
