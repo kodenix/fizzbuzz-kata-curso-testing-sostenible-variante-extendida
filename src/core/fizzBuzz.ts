@@ -1,7 +1,7 @@
 export class FizzBuzz {
     convert(value: number): string {
         if (value % 15 === 0) {
-            return "FizzBuzz";
+            return this.processDivisibleByFiveteen(value);
         }
         if (value % 5 === 0) {
             return this.processDivisibleByFive(value);
@@ -10,6 +10,11 @@ export class FizzBuzz {
             return this.processDivisibleByThree(value);
         }
         return value.toString();
+    }
+    
+    private processDivisibleByFiveteen(value: number): string {
+        if (value === 15) return "FizzBuzzBuzz";
+        return "FizzBuzz";
     }
     
     private processDivisibleByFive(value: number): string {
