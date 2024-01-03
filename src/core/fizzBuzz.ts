@@ -19,6 +19,11 @@ export class FizzBuzz {
             outText+= "Buzz";
         }
 
+        const total3Characters = this.totalOfCharacterInValue(value, "3");
+        for (let i=0; i < total3Characters; i++) {
+            outText+= "Fizz";
+        }
+
         return outText;
         
     }
