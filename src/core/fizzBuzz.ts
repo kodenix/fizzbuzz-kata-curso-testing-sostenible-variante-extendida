@@ -13,8 +13,14 @@ export class FizzBuzz {
     }
     
     private processDivisibleByFiveteen(value: number): string {
-        if (value === 15) return "FizzBuzzBuzz";
-        return "FizzBuzz";
+        let outText = "FizzBuzz";
+        const totalCharacters = this.totalOfCharacterInValue(value, "5");
+        for (let i=0; i < totalCharacters; i++) {
+            outText+= "Buzz";
+        }
+
+        return outText;
+        
     }
     
     private processDivisibleByFive(value: number): string {
