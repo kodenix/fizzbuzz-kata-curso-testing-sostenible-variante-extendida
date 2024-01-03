@@ -14,17 +14,8 @@ describe('FizzBuzz', ()=> {
 		expect(new FizzBuzz().convert(value)).toBe(expected);
 	})
 
-
-	test('convert 15 to FizzBuzz', () => {
-		expect(new FizzBuzz().convert(15)).toBe("FizzBuzz");
-	})
-
-	test('convert 30 to FizzBuzz', () => {
-		expect(new FizzBuzz().convert(30)).toBe("FizzBuzz");
-	})
-
-	test('convert 60 to FizzBuzz', () => {
-		expect(new FizzBuzz().convert(60)).toBe("FizzBuzz");
+	test.each([[15, "FizzBuzz"], [30, "FizzBuzz"], [60, "FizzBuzz"]])('convert %i to %s', (value: number, expected: string)=>{
+		expect(new FizzBuzz().convert(value)).toBe(expected);
 	})
 
 
