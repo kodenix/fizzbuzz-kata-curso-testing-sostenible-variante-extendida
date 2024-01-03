@@ -8,4 +8,8 @@ describe('FizzBuzz', ()=> {
 	test('convert_2_to_2', ()=>{
 		expect(new FizzBuzz().convert(2)).toBe('2');
 	})
+
+	test('convert_4_to_4', ()=>{
+		expect(new FizzBuzz().convert(4)).toBe('4');
+	})
 })
