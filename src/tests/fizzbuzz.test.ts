@@ -30,5 +30,7 @@ describe('FizzBuzz', ()=> {
 		expect(new FizzBuzz().convert(33)).toBe("FizzFizz");
 	})
 
-
+	test('63 convert to FizzFizz', ()=> {
+		expect(new FizzBuzz().convert(63)).toBe("FizzFizz");
+	})
 })

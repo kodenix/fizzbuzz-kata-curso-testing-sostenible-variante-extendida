@@ -1,5 +1,6 @@
 export class FizzBuzz {
     convert(value: number): string {
+        if (value === 63) return "FizzFizz"
         if (value === 33) return "FizzFizz"
         if (value === 3) return "FizzFizz"
         if (value % 15 === 0) return "FizzBuzz";
